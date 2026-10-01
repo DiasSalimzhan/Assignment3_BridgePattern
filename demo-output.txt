@@ -1,0 +1,9 @@
+T1 PASS | Circle + VectorRenderer | result=VECTOR circle dimension=2.0
+T2 PASS | Circle + RasterRenderer | result=RASTER circle pixels~20.0
+T3 PASS | Square + VectorRenderer | result=VECTOR square dimension=3.0
+T4 PASS | Square + RasterRenderer | result=RASTER square pixels~30.0
+T5 PASS sameObject=true | stateUnchanged=true
+before=VECTOR circle dimension=2.0 | after=RASTER circle pixels~20.0
+T6 PASS | Circle + AsciiRenderer | result=ASCII circle char-size=2.0
+T7 PASS | Square + AsciiRenderer | result=ASCII square char-size=3.0
+SUMMARY: 7/7 PASS
